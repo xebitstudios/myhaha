@@ -1,0 +1,15 @@
+#table_id  {
+	display: block; 
+}
+.bxs {
+	min-height:200px;
+	margin-right:10px;
+}
+.mg30 {
+	margin-left:-30px;
+	margin-right:-30px;
+}
+h4, h6 {
+    font-family: Digitalt, Arial, Helvetica, sans-serif;
+    font-size: large;
+}

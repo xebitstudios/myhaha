@@ -1,0 +1,21 @@
+<div class="col-md-12" style="margin-top:20px;margin-bottom:20px;">
+	<div id="qsttxt" class="mg-top-20">
+		<div class="input-group col-md-12">
+			<textarea type="text" class="form-control" rows="3" cols="50" style="border-radius:10px;" [(ngModel)]="postVal">Enter your question here</textarea>
+		</div>
+		<div class="btn" (click)="submitPost()" style="float:right;background-color:#5D6D7E;color:#fff;margin-top:20px;min-width:120px;">
+		    Post
+		</div>
+	</div>
+</div>
+<div *ngFor="let blk of qstblk; let i = index" [attr.data-index]="i" class="col-md-12 mb10">
+	<div class="qstbx col-md-12">
+		<div class="col-md-9 mt10">
+			<div>{{blk.qst}}</div>
+		</div>
+		<div class="col-md-2 tc" style="margin-right:10px;">
+			<div class="btn p1" (click)=pOne(i)>+1</div>
+			<div>{{blk.votecount}} {{isVotes(blk.votecount)}}</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,45 @@
+.qstbx {
+	border: 1px solid #85929E;
+    padding: 5px 5px 5px 5px;
+    border-radius: 5px;
+    background-color: #FDFEFE;
+}
+.p1 {
+	color: #fff;
+    min-width: 100px;
+    background-color: #5D6D7E;
+    border-color: #5D6D7E;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.tc {
+	text-align: center;
+}
+.mtd10 {
+	margin-top: 10px;
+    display: table;
+}
+.mb10 {
+	margin-bottom: 10px;
+}
+.btn1 {
+    background-color:#5D6D7E;
+    color:#fff;
+    margin-top:10px;
+    margin-bottom: 10px;
+    min-width:120px;
+    border-radius: 0px;
+    max-height: 32px;
+    max-width: 150px;
+}
+.dflex {
+    display: flex;
+}
+.nomi {
+    font-family: Helvetica, sans-serif;
+    font-size: x-large;
+}
+/*.asimov {
+    font-family: AsimovDist, Arial, Helvetica, sans-serif;
+    font-size: x-large;
+}*/

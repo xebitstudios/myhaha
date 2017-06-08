@@ -1,0 +1,30 @@
+<div>
+   <header id="" role="banner">
+      <div class="navbar navbar-default" role="navigation" style="position:initial;">
+         <div class="container-fluid" style="color:whitesmoke;">
+            <div class="navbar-header col-md-3">
+               <button type="button" class="navbar-toggle mg-left-10" data-toggle="collapse" data-target="#righttray" (click)="toggleRighttray()">
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span> 
+               </button>
+               <span style="color:#000;margin-left:10px;">
+                  <img class="logo" src="../../assets/img/accenture-digital.svg" alt="Accenture">
+                </span>
+            </div>
+            <div id="righttray" class="navbar-collapse {{isCollapse}} col-md-6">
+               <ul class="nav navbar-nav navbar-right" style="font-size:larger;margin-top:5px;">
+                  <li class="blk"><a routerLink="/" title="Home" (click)="toggleRighttray()"><span>&nbsp;<i class="fa fa-home fa-1" aria-hidden="true"></i></span> Home</a></li>
+                  <li class="blk"><a routerLink="/schedule" title="Schedule" (click)="toggleRighttray()"><span>&nbsp;<i class="fa fa-calendar fa-1" aria-hidden="true"></i></span> Schedule</a></li>
+                  <li class="blk"><a routerLink="/social" title="Social" (click)="toggleRighttray()"><span>&nbsp;<i class="fa fa-users fa-1" aria-hidden="true"></i></span> Social</a></li>
+                  <li class="blk"><a routerLink="/ask" title="Ask" (click)="toggleRighttray()"><span>&nbsp;<i class="fa fa-weixin fa-1" aria-hidden="true"></i></span> Ask</a></li>
+                  <li class="blk"><a routerLink="/nominate" title="Nominate" (click)="toggleRighttray()"><span>&nbsp;<i class="fa fa-trophy fa-1" aria-hidden="true"></i></span> Nominate</a></li>
+               </ul>
+            </div>
+            <div class="navbar-header col-md-3">
+              <img class="logo flt hideme" src="../../assets/img/logo-accenture.svg" alt="Accenture">
+            </div>
+         </div>
+      </div>
+   </header>
+</div>

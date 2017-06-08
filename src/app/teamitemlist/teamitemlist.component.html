@@ -1,0 +1,17 @@
+<div class="col-md-12">
+	<div class="col-md-2"></div>
+	<div class="col-md-8">
+		<div *ngFor="let team of teams" class="col-md-2 bxs">
+			<app-teamitem class=""
+				[imgloc]="team.imgloc" 
+				[dname]="team.dname" 
+				[positn]="team.positn">
+			</app-teamitem>
+		</div>
+		<div class="col-md-12 mg30">
+			<app-globalnav></app-globalnav>	
+		</div>
+	</div>
+	<div class="col-md-2"></div>
+</div>
+<!-- <app-appfooter></app-appfooter> -->

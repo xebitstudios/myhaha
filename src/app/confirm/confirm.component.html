@@ -1,0 +1,55 @@
+<div id="myModal" class="modal-dialog">
+ <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" (click)="close()" >&times;</button>
+      <h3 class="modal-title">{{sessiondata[0].abstract}}</h3>
+    </div>
+    <div class="modal-body">
+      <div class="col-md-12">
+        <div id="hd-section">
+          <div style="margin-top:20px;margin-bottom:10px;">
+            <div><strong>Start Date</strong></div>
+            <div>{{sessiondata[0].sdate}}</div>
+          </div>
+          <div style="margin-bottom:10px;">
+            <div><strong>End Date</strong></div>
+            <div>{{sessiondata[0].edate}}</div>
+          </div>
+          <div style="margin-bottom:10px;">
+            <div><strong>Location</strong></div>
+            <div>{{sessiondata[0].location}}</div>
+          </div>
+        </div>
+        <div style="margin-top:20px;margin-bottom:10px;">
+            <div style="margin-bottom:10px;">
+              <strong>Presenters</strong>
+            </div>
+            <div *ngFor="let presenter of presenters">
+              <label class="bluclr"><a href="{{presenter.pplpage}}">{{presenter.name}}</a></label>
+              <p>{{presenter.bio}}</p>
+            </div>
+            <div>
+              <label class="blkclr">Abstract</label>
+              <p>{{sessiondata[0].abstract}}</p>
+            </div>
+            <div>
+              <label class="blkclr">Rate this talk</label>
+              <p>Votes: {{sessiondata[0].vote}}</p>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btnModal" (click)="confirm()">OK</button>
+      <br>
+      <div class="star5">
+        <div *ngFor="let star of star5; let i = index" [attr.data-index]="i">
+          <div (click)="starValue(i)">
+            <i class="fa fa-{{star}}" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal-backdrop fade in" style="height: 995px;"></div>

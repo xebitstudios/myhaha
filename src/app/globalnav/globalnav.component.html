@@ -1,0 +1,30 @@
+<div class="col-md-12 barr">
+	<div class="" style="padding:2px 0px 2px 0px;width:20%;">
+		<div class="btn lftbtn" (click)="onMoveBack()" style="">
+		    <i class="fa fa-chevron-left fa-1x" aria-hidden="true"></i>
+		</div>
+	</div>
+	<div class="" style="text-align:center;width:80%;">
+		<div style="padding-top:5px;">{{confdate}}</div>
+	</div>
+	<div class="" style="padding:2px 0px 2px 0px;width:20%;">
+		<div class="btn rthbtn" (click)="onMoveForward()">
+		    <i class="fa fa-chevron-right fa-1x" aria-hidden="true"></i>
+		</div>
+	</div>
+</div>
+
+<div class="col-md-12 gdiv" *ngFor="let sesn of sesns; let i = index" [attr.data-index]="i">
+	<div class="col-md-12">
+		<div class="" (click)=showConfirm(i) data-target="#myModal" data-toggle="modal" data-backdrop="static" data-keyboard="false">
+			<div>
+				<h5>{{sesn.title}}</h5>
+				<label>{{sesn.authrs}}</label>
+			</div>
+			<div class="grnbr">
+				<div class="lft">{{sesn.loctn}}</div>
+				<div class="rht">{{sesn.tim}}</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,25 @@
+<div *ngFor="let nominee of nominees; let i = index" [attr.data-index]="i" class="col-md-12 mb10">
+	<div *ngIf="showPanel" class="qstbx col-md-12">
+		<div class="col-md-12 mtd10" style="">
+			<div class="col-md-12 dflex">
+				<div class="col-md-9" style="margin-left:-30px;">
+					<div class="nomi">{{nominee.nominee}}</div>
+				</div>
+				<div class="btn btn1 col-md-3" (click)="nominateNow(i)" style="float:right;margin-left:10px;font-weight:600;">Nominate</div>
+			</div>
+			<div class="mb10">{{nominee.bio}}</div>
+		</div>		
+	</div>
+</div>
+<div *ngIf="!showPanel" class="col-md-12 mb10">
+	<div class="qstbx col-md-12">
+		<div class="col-md-12 mtd10" style="">
+			<h3>{{dnominee}}</h3>
+			<div class="mb10">{{dbio}}</div>
+			<textarea *ngIf="dbio" type="text" class="form-control" rows="2" cols="50" style="border-radius:2px;margin-bottom:10px;" [(ngModel)]="dwhyNom"></textarea>
+			<input *ngIf="dbio" type="text" class="form-control" style="border-radius:2px;" [(ngModel)]="dwhoNom">
+			<div class="btn btn1" (click)="nominate()" style="float:right;margin-left:10px;">Nominate Now</div>
+			<div class="btn btn1" (click)="goBack()" style="float:right;">Back</div>
+		</div>		
+	</div>
+</div>

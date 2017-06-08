@@ -1,0 +1,48 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'Urban';
+    src: url('assets/fonts/UrbanJungleDEMO.otf');
+}
+@font-face {
+    font-family: 'Digitalt';
+    src: url('assets/fonts/Digitalt.ttf');
+}
+body {
+    font-size: 12px;
+}
+.minh {
+	min-height:800px;
+    /*background-color: #F4F6F6;*/
+}
+
+.sty {
+	font-size:14px;
+	color:white;
+	padding-top:10px;
+}
+.icon-bar {
+    max-height: 93px;
+    background-color: black;
+}
+.icon-bar .item {
+    width: 15%;
+}
+.icon-bar > * {
+    font-size: 1rem;
+    padding: 1.25rem;
+}
+.icon-bar > * {
+    display: block;
+    float: left;
+    font-size: 1rem;
+    margin: 0 auto;
+    padding: 1.25rem;
+    text-align: center;
+    width: 25%;
+}
+.grnhdr {
+    background-color:#5D6D7E;
+}
+.bd30 {
+    border-radius: 60px;
+}

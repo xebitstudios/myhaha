@@ -1,0 +1,49 @@
+.bluclr {
+	color: #3498DB;
+}
+.blkclr {
+	color: black;
+}
+.modal-body {
+	padding: 0px;
+    max-height: calc(100vh - 210px);
+    overflow-y: auto;
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #5D6D7E;
+    border: 2px solid transparent;
+    background-clip: content-box;   /* THIS IS IMPORTANT */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #5D6D7E;
+    border: 1px solid #5D6D7E;
+}
+.fade.in {
+	opacity: .75;
+	background-color: #000;
+}
+.modal-backdrop {
+	z-index: 100;
+}
+.modal-dialog {
+	z-index: 1000;
+}
+.btnModal {
+	float:right;
+	background-color:#5D6D7E;
+	color:#fff;
+	margin-top:20px;
+	min-width:120px;
+}
+.star5 {
+	display:inline-flex;
+	margin:0 auto;
+	width:40%;
+}
