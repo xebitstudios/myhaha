@@ -32,11 +32,8 @@ TAW is accessible on '/taw' postfix.
 - AWS DynamoDB
 
 ## Contributing
-Please contact Adetunji Oduyela if you wish to contribute.
+Please contact aaa if you wish to contribute.
 
 ## Authors
 
-- Rene Rangel Ramirez
-- Adetunji Oduyela
-- Ned Visolyaputra
-- Eu Gene Lim
+- aaa
