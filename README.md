@@ -1,6 +1,3 @@
-# Tech Arch Workshop solution
-The Tech Arch Workshop solution manages events, including automating event registration, scheduling multiple activities for participants to sign up for, reporting tools and more. This solution is also a reference application for Angular 4 and serverless computing under the Accenture Open Web Toolkit (AOWP).
-
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the system on a live system.
 
